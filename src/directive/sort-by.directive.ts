@@ -28,11 +28,11 @@ export class JhiSortByDirective {
 
     jhiSort: JhiSortDirective;
 
-    constructor(@Host() jhiSort: JhiSortDirective, private el: ElementRef, private renderer: Renderer, configService: ConfigService) {
+    constructor(@Host() jhiSort: JhiSortDirective, private el: ElementRef, private renderer: Renderer/*, configService: ConfigService*/) {
         this.jhiSort = jhiSort;
-        let config = configService.getConfig();
-        this.sortAscIcon = config.sortAscIcon;
-        this.sortDescIcon = config.sortDescIcon;
+//         let config = configService.getConfig();
+//         this.sortAscIcon = config.sortAscIcon;
+//         this.sortDescIcon = config.sortDescIcon;
     }
 
     @HostListener('click') onClick() {
