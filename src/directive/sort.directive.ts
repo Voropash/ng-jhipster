@@ -34,13 +34,13 @@ export class JhiSortDirective {
 
     element: any;
 
-    constructor(el: ElementRef, renderer: Renderer, configService: ConfigService) {
+    constructor(el: ElementRef, renderer: Renderer/*, configService: ConfigService*/) {
         this.element = el.nativeElement;
-        let config = configService.getConfig();
-        this.sortIcon = config.sortIcon;
-        this.sortAscIcon = config.sortAscIcon;
-        this.sortDescIcon = config.sortDescIcon;
-        this.sortIconSelector = config.sortIconSelector;
+//         let config = configService.getConfig();
+//         this.sortIcon = config.sortIcon;
+//         this.sortAscIcon = config.sortAscIcon;
+//         this.sortDescIcon = config.sortDescIcon;
+//         this.sortIconSelector = config.sortIconSelector;
     }
 
     sort (field: any) {
